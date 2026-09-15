@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary */
+  --clich-navy: #2c2757;
+  --clich-blue: #356dff;
+  --clich-purple: #9550ff;
+  --clich-black: #020202;
+  --clich-white: #ffffff;
+  --clich-input-border: #181f2b;
+  --clich-gray: #4f555f;
+
+  --clich-indigo: #2b3286;
+  --clich-cyan: #009ee2;
+  --clich-magenta: #de027a;
+  --clich-dark-pink: #a2195b;
+  --clich-error: #b60101;
+
+  --clich-primary: var(--clich-purple);
+  --clich-secondary: var(--clich-blue);
+
+  --clich-background: var(--clich-black);
+  --clich-background-elevated: var(--clich-navy);
+
+  --clich-text-primary: var(--clich-white);
+  --clich-text-secondary: rgba(255, 255, 255, 0.65);
+  --clich-text-tertiary: var(--clich-gray);
+
+  --clich-border: rgba(255, 255, 255, 0.12);
+
+  --clich-input-border: var(--clich-input-border);
+
+  --clich-error: var(--clich-error);
+
+  /* Gradients as guideline named them */
+  --clich-gradient-blue: linear-gradient(
+    90deg,
+    var(--clich-indigo),
+    var(--clich-cyan)
+  );
+  --clich-gradient-violet: linear-gradient(
+    90deg,
+    var(--clich-purple),
+    var(--clich-blue)
+  );
+  --clich-gradient-pink: linear-gradient(
+    90deg,
+    var(--clich-magenta),
+    var(--clich-dark-pink)
+  );
+  --clich-gradient-brand: linear-gradient(
+    90deg,
+    var(--clich-indigo),
+    var(--clich-magenta)
+  );
+
+  --clich-gradient-background: linear-gradient(
+    90deg,
+    var(--clich-black),
+    var(--clich-navy)
+  );
+}
+
+@theme {
+  --color-primary: var(--clich-primary);
+  --color-secondary: var(--clich-secondary);
+
+  --color-navy: var(--clich-navy);
+  --color-blue: var(--clich-blue);
+  --color-purple: var(--clich-purple);
+  --color-black: var(--clich-black);
+
+  --color-indigo: var(--clich-indigo);
+  --color-cyan: var(--clich-cyan);
+  --color-magenta: var(--clich-magenta);
+  --color-dark-pink: var(--clich-dark-pink);
+
+  --color-background: var(--clich-background);
+  --color-background-elevated: var(--clich-background-elevated);
+
+  --color-text-primary: var(--clich-text-primary);
+  --color-text-secondary: var(--clich-text-secondary);
+  --color-text-tertiary: var(--clich-text-tertiary);
+
+  --color-border: var(--clich-border);
+
+  --font-sans: var(--font-inter), sans-serif;
+
+  --leading-default: 1.1;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --text-tiny: 0.6rem;
+  --text-xs: 0.72rem; /*  11.52 px */
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.4rem;
+  --text-heading: 1.875rem; /*  38 px */
+  --text-4xl: 2.25rem;
+}
+
+body {
+  line-height: var(--leading-default);
+}
+
