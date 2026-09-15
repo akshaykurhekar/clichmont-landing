@@ -1,5 +1,7 @@
+import Image from "next/image";
 import DefaultButton from "../ui/DefaultButton";
-
+import solar from "@/app/logo/solar_panels.png"
+import gpu from "@/app/logo/gpu.png"
 const gradient =
   "bg-[linear-gradient(110deg,#A855F7_0%,#7C5CFF_45%,#3B6BFF_100%)]";
 
@@ -50,25 +52,25 @@ export default function InfrastructureSection() {
 
 
           {/* Gradient block */}
-          <div
+          <Image
+            src={solar}
             className={`
-              min-h-56
+              max-h-85
               rounded-lg
               ${gradient}
               sm:col-span-8
-            `}
-          />
+            `} alt={""}          />
 
           {/* Bottom gradient */}
-          <div
+          <Image
+            src={gpu}
             className={`
                hidden md:block
-              min-h-56
+              max-h-85
               rounded-lg
               ${gradient}
               sm:col-span-8
-            `}
-          />
+            `} alt={""}          />
 
           {/* Have GPUs */}
           <div
@@ -94,15 +96,15 @@ export default function InfrastructureSection() {
             <DefaultButton className="w-35!">Become Provider</DefaultButton>
           </div>
 
-           <div
+           <Image
+            src={gpu}
             className={`
                block md:hidden
-              min-h-56
-              rounded-[5px]
+              max-h-85
+              rounded-lg
               ${gradient}
               sm:col-span-8
-            `}
-          />
+            `} alt={""}   />
         </div>
       </div>
     </section>
