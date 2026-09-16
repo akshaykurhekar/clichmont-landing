@@ -99,7 +99,7 @@ export default function InfrastructureSection() {
            <Image
             src={gpu}
             className={`
-               block md:block
+               block md:hidden
               max-h-85
               rounded-lg
               ${gradient}

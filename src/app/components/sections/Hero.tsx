@@ -26,7 +26,7 @@ export default function HeroSection() {
       <PixelBackground />
 
       {/* Nav */}
-      <header className="relative z-10 mx-auto flex justify-center items-center px-6 mt-6 md:mt-12">
+      <header className="relative z-10 mx-auto flex justify-center items-center px-6 mt-6">
 
         <div className="flex items-center justify-between gap-8  w-full md:w-fit">
           <div className="bg-white/30 size-1o md:size-13 flex flex-col justify-center items-center rounded-full p-1.5">

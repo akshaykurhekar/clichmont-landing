@@ -11,7 +11,7 @@ export default function DataCenter({
     keyMetricValue?: string;
 }) {
     return (
-        <section className="relative w-full bg-black  py-16 px-6 text-white sm:py-1 border">
+        <section className="relative w-full bg-black  py-16 px-6 text-white sm:py-1 ">
             <div className="mx-auto  ">
 
                 <div className="absolute top-0 left-0 z-10 max-w-65 rounded-3xl border-4 border-black/95 bg-black/95 px-6 py-1 sm:px-8 sm:py-6">
